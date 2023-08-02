@@ -78,7 +78,6 @@ def extract_information(ocr_result):
         # for s in states:
             if re.findall(r"\btamilnadu\b", text, re.IGNORECASE):
                 state = text
-# \s*(\w+)\s+\d{6}|
         # Extract City (Assuming city name is present in the OCR result)
         city_match = re.search(r',\s*(\w+)', text)
         if city_match:
