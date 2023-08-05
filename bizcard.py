@@ -168,7 +168,7 @@ def app():
         if st.button("delete a record"):
             cursor.execute("DELETE FROM bizcard WHERE id = %s", (id,))
             connection.commit()
-            st.success("Record id to be deleted successfully...")    
+            st.success("Record id has been deleted successfully...")    
 
 #  Main function program starts from here only                   
 if __name__ == "__main__":
